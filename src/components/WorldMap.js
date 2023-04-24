@@ -12,6 +12,9 @@ const WorldMap = () => {
   const state = useSelector((state) => state.countries.map);
   let continent;
   switch (state) {
+    case 'Asia':
+      continent = <img src={asia} alt="Asian continent" />;
+      break;
     case 'Africa':
       continent = <img src={africa} alt="African continent" />;
       break;
@@ -24,14 +27,11 @@ const WorldMap = () => {
     case 'South America':
       continent = <img src={southAmerica} alt="South american continent" />;
       break;
-    case 'Asia':
-      continent = <img src={asia} alt="Asian continent" />;
+    case 'Antarctica':
+      continent = <img src={antarctica} alt="Antarctican continent" />;
       break;
     case 'Oceania':
       continent = <img src={oceania} alt="Oceania continent" />;
-      break;
-    case 'Antarctica':
-      continent = <img src={antarctica} alt="Antarctican continent" />;
       break;
     default:
       continent = <img src={worldMap} alt="World Map" />;
