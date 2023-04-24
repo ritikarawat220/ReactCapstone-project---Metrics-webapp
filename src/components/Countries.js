@@ -8,7 +8,7 @@ const Countries = () => {
 
   if (map !== 'SELECT A CONTINENT') {
     if (countries.length !== 0) {
-      output = countries.filter((item) => item.continent[0] === map);
+      output = countries.filter((item) => item.continents[0] === map);
     }
   }
 
