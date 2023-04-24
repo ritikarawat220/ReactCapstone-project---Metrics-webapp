@@ -112,7 +112,8 @@ main {
 
 .countries-item {
   width: 50%;
-  border: 1px solid #fff;
+  height: 200px;
+  border: 0.3px solid #fff;
   display: flex;
   align-items: stretch;
   align-items: center;
