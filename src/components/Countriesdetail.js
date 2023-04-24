@@ -20,7 +20,7 @@ const CountriesDetail = () => {
     } = output[0];
 
     return (
-      <div className="country-info">
+      <div className="info">
         <h1>{name.official}</h1>
         <img src={flags.png} alt={`${name.common}'s Flag`} />
         <div>
