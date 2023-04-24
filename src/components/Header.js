@@ -1,15 +1,17 @@
+import { AiFillAudio, AiFillHome } from 'react-icons/ai';
+import { FiSettings } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
 const Header = () => (
   <header>
     <Link className="link" to="/">
       {' '}
-      <i className="fa-solid fa-house" />
+      <AiFillHome size={25} />
     </Link>
-    <h2 className="header-tag">World Metrics</h2>
-    <div className="header-controls">
-      <i className="fa-solid fa-microphone fa-2x" />
-      <i className="fa-solid fa-gear fa-2x" />
+    <h1 className="header-tag">World Metrics</h1>
+    <div className="header-bar">
+      <AiFillAudio size={25} />
+      <FiSettings size={25} />
     </div>
   </header>
 );
