@@ -1,5 +1,4 @@
 import { useSelector } from 'react-redux';
-import worldMap from '../assets/world.png';
 import asia from '../assets/asie.png';
 import africa from '../assets/afrique.png';
 import europe from '../assets/leurope.png';
@@ -34,7 +33,13 @@ const WorldMap = () => {
       continent = <img src={oceania} alt="Oceania continent" />;
       break;
     default:
-      continent = <img src={worldMap} alt="World Map" />;
+      continent = (
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Rotating_earth_%28large%29_transparent.gif"
+          alt="flat texture blue green World transparent background @transparentpng.com"
+          className="world-image"
+        />
+      );
       break;
   }
 

@@ -45,10 +45,13 @@ select {
 }
 
 .link {
+  font-size: 20px;
   color: #fff;
 }
 
 header {
+  background-color: #d6447d;
+  border-color: #fff3;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,13 +59,17 @@ header {
 }
 
 .header-tag {
-  font-weight: 800;
+  font-weight: 900;
 }
 
 .header-bar {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   padding-right: 1%;
+}
+
+.hidden {
+  display: none;
 }
 
 main {
@@ -73,4 +80,121 @@ main {
   text-align: center;
   gap: 1.2rem;
   min-height: 75vh;
+}
+
+.map {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map > img {
+  width: 80%;
+}
+
+.countries-list {
+  border: 1px solid #9b8484;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.countries-list h2 {
+  background-color: #d6447d;
+  border-color: #fff3;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.countries-item {
+  width: 50%;
+  height: 200px;
+  border: 0.3px solid #ce4277;
+  display: flex;
+  align-items: stretch;
+  align-items: center;
+  justify-content: center;
+}
+
+.countries-item:nth-of-type(4n+2) {
+  background-color: #ce4277;
+  color: #fff;
+  text-decoration: none;
+  width: 50%;
+}
+
+.countries-item:nth-of-type(4n+3) {
+  background-color: #ce4277;
+  color: #fff;
+  text-decoration: none;
+  width: 50%;
+}
+
+.countries-item > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.flag {
+  width: 341px;
+  height: 149px;
+}
+
+.world-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.info > h1 {
+  text-align: center;
+}
+
+.bold {
+  font-weight: 800;
+  padding-left: 10px;
+  color: #000;
+}
+
+.fa-house {
+  color: #000;
+}
+
+.languages,
+.borders {
+  display: flex;
+}
+
+.languages > ul,
+.currencies > ul,
+.borders > ul {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.currencies > ul {
+  flex-direction: column;
+}
+
+.symbol {
+  padding-left: 10px;
 }
