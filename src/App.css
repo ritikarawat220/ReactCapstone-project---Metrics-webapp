@@ -147,8 +147,13 @@ main {
 }
 
 .flag {
-  width: 150px;
-  height: 100px;
+  width: 341px;
+  height: 149px;
+}
+
+.world-image {
+  max-width: 100%;
+  height: auto;
 }
 
 .info {
