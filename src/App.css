@@ -50,6 +50,8 @@ select {
 }
 
 header {
+  background-color: #d6447d;
+  border-color: #fff3;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -62,7 +64,7 @@ header {
 
 .header-bar {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   padding-right: 1%;
 }
 
@@ -92,7 +94,7 @@ main {
 }
 
 .countries-list {
-  border: 1px solid #fff;
+  border: 1px solid #9b8484;
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -103,6 +105,8 @@ main {
 }
 
 .countries-list h2 {
+  background-color: #d6447d;
+  border-color: #fff3;
   text-align: center;
   display: flex;
   align-items: center;
@@ -113,7 +117,7 @@ main {
 .countries-item {
   width: 50%;
   height: 200px;
-  border: 0.3px solid #fff;
+  border: 0.3px solid #ce4277;
   display: flex;
   align-items: stretch;
   align-items: center;
