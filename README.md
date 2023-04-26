@@ -1,7 +1,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[World Metrics\] ](#-World Metrics-)
+- [📖 [World Metrics] ](#-World Metrics-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -62,7 +62,7 @@ The key features of this website include.
 <!-- LIVE DEMO -->
 ### LIVE DEMO <a name="live-demo"></a>
 
-- [LIVE-DEMO](https://reactcapstone-project-metrics-webapp.onrender.com/)
+- [LIVE-DEMO](https://metrics-webapp-xo2x.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
