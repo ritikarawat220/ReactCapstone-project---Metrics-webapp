@@ -39,7 +39,7 @@ img {
 }
 
 select {
-  font-family: cursive;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
   padding: 10px;
 }
@@ -60,6 +60,7 @@ header {
 
 .header-tag {
   font-weight: 900;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .header-bar {
@@ -116,7 +117,7 @@ main {
 
 .countries-item {
   width: 50%;
-  height: 200px;
+  height: 250px;
   border: 0.3px solid #ce4277;
   display: flex;
   align-items: stretch;
@@ -170,9 +171,13 @@ main {
 }
 
 .bold {
-  font-weight: 800;
-  padding-left: 10px;
-  color: #000;
+  color: #fff;
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5rem;
 }
 
 .fa-house {
