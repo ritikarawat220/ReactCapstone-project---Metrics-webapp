@@ -63,7 +63,7 @@ const fetchCountryData = () => async (dispatch) => {
         capital: item.capital,
         languages: item.languages,
         currencies: item.currencies,
-        borders: item.borders,
+        id: item.borders,
         area: item.area,
         population: item.population,
         continents: item.continents,

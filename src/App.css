@@ -8,11 +8,14 @@ body {
 }
 
 *,
-*::before,
-*::after {
+::after,
+::before {
   box-sizing: border-box;
+  font-family: Lato, sans-serif;
+  font-size: 14px;
   margin: 0;
   padding: 0;
+  text-transform: uppercase;
 }
 
 .App {
@@ -39,6 +42,12 @@ img {
 }
 
 select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-left: 42%;
+  gap: 1.2rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
   padding: 10px;
@@ -59,7 +68,8 @@ header {
 }
 
 .header-tag {
-  font-weight: 900;
+  margin-left: 30px;
+  font-size: 30px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -73,16 +83,6 @@ header {
   display: none;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  gap: 1.2rem;
-  min-height: 75vh;
-}
-
 .map {
   padding: 20px;
   display: flex;
@@ -91,7 +91,7 @@ main {
 }
 
 .map > img {
-  width: 80%;
+  width: 30%;
 }
 
 .countries-list {
@@ -103,6 +103,12 @@ main {
   justify-content: space-between;
   margin: 0 auto;
   width: 100%;
+}
+
+.info-flag {
+  max-height: 20rem;
+  min-height: 12rem;
+  width: 50%;
 }
 
 .countries-list h2 {
@@ -159,18 +165,24 @@ main {
 }
 
 .info {
+  align-items: center;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
-  padding: 20px;
+  justify-content: space-between;
+  padding: 2rem 1rem;
 }
 
 .info > h1 {
-  text-align: center;
+  margin-left: 17px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.6rem;
+  text-transform: uppercase;
 }
 
-.bold {
+.dashboard {
+  background-color: #df4782;
+}
+
+/* .bold {
   color: #fff;
   align-items: flex-end;
   display: flex;
@@ -178,27 +190,22 @@ main {
   text-transform: uppercase;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1.5rem;
+} */
+
+.item {
+  align-items: center;
+  display: flex;
+  height: 3.5rem;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.item:nth-child(2n) {
+  background-color: #ce4277;
 }
 
 .fa-house {
   color: #000;
-}
-
-.languages,
-.borders {
-  display: flex;
-}
-
-.languages > ul,
-.currencies > ul,
-.borders > ul {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.currencies > ul {
-  flex-direction: column;
 }
 
 .symbol {

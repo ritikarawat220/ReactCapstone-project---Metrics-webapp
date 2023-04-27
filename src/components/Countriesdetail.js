@@ -13,54 +13,44 @@ const CountriesDetail = () => {
       capital,
       languages,
       currencies,
-      borders,
+      id,
       area,
       population,
 
     } = output[0];
 
     return (
-      <div className="info">
-        <h1>{name.official}</h1>
-        <img src={flags.png} alt={`${name.common}'s Flag`} />
-        <div>
+      <div className="dashboard">
+        <div className="info">
+          <img className="info-flag" src={flags.png} alt={`${name.common}'s Flag`} />
+          <h1>{name.official}</h1>
+        </div>
+        <div className="item">
           Capital:
           <span className="bold">{capital || 'N/A'}</span>
         </div>
-        <div>
+        <div className="item">
+          <span>ID</span>
+          <span>{id}</span>
+        </div>
+        <div className="item">
 
           Area:
           <span className="bold">{`${area} km²` || 'N/A'}</span>
         </div>
-        <div>
+        <div className="item">
           Population:
           <span className="bold">{population || 'N/A'}</span>
         </div>
-        <div className="borders">
-          Borders:
-          {borders ? (
-            <ul>
-              {borders.map((border) => (
-                <li className="bold" key={border}>{border}</li>
-              ))}
-            </ul>
-          ) : ('N/A'
-          )}
+        <div className="item">
+          <span>ID</span>
+          <span>{id}</span>
         </div>
-        <div className="languages">
+        <div className="item">
           Languages:
-          {languages ? (
-            <ul>
-              {Object.values(languages).map((language) => (
-                <li className="bold" key={language}>
-                  {language}
-                  ,
-                </li>
-              ))}
-            </ul>
-          ) : ('N/A')}
+          <span className="bold">{languages ? Object.values(languages)[0] : 'N/A'}</span>
         </div>
-        <div className="currencies">
+        <div className="item">
           Currencies:
           {currencies ? (
             <ul>
