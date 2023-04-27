@@ -1,6 +1,5 @@
 import { useSelector } from 'react-redux';
-import { useParams, Link } from 'react-router-dom';
-import { IoIosArrowBack } from 'react-icons/io';
+import { useParams } from 'react-router-dom';
 
 const CountriesDetail = () => {
   const state = useSelector((state) => state.countries.countries);
@@ -22,9 +21,6 @@ const CountriesDetail = () => {
 
     return (
       <div className="dashboard">
-        <Link className="link" to="/">
-          <IoIosArrowBack size={30} />
-        </Link>
         <div className="info">
           <img className="info-flag" src={flags.png} alt={`${name.common}'s Flag`} />
           <h1>{name.official}</h1>
@@ -74,5 +70,4 @@ const CountriesDetail = () => {
   }
   return <div>Loading...</div>;
 };
-
 export default CountriesDetail;

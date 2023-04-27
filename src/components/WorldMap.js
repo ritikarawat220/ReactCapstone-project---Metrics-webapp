@@ -2,7 +2,6 @@ import { useSelector } from 'react-redux';
 import asia from '../assets/asie.png';
 import africa from '../assets/afrique.png';
 import europe from '../assets/leurope.png';
-import worldmap from '../assets/world.png';
 import northAmerica from '../assets/amerique-du-nord.png';
 import southAmerica from '../assets/amerique-du-sud.png';
 import oceania from '../assets/australie.png';
@@ -34,13 +33,7 @@ const WorldMap = () => {
       continent = <img src={oceania} alt="Oceania continent" />;
       break;
     default:
-      continent = (
-        <img
-          src={worldmap}
-          alt="flat texture blue green World transparent background @transparentpng.com"
-          className="world-image"
-        />
-      );
+      continent = null;
       break;
   }
 
